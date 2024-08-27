@@ -1,0 +1,511 @@
+/* Estilos generales para la barra de navegación */
+
+.logo-img {
+    height: 35px; /* Ajusta este valor según el tamaño deseado */
+    width: auto;
+    margin-top: 40px;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-brand {
+    font-size: 2rem !important ;
+    color: #292929; 
+    margin-top: 40px ;
+}
+
+
+.navbar-nav .nav-link {
+    color: #292929; /* Color por defecto de los enlaces */
+    transition: color 0.3s ease-in-out; /* Suaviza la transición de color */
+    margin-top: 23px;
+    position: left;
+}
+
+/* Cambio de color al pasar el mouse por encima del enlace */
+.navbar-nav .nav-link:hover {
+    color: #037a9b; /* Color celeste al pasar el mouse */
+}
+
+/* Cambio de color al hacer clic en el enlace (foco) */
+.navbar-nav .nav-link:focus {
+    color: #037a9b; /* Color celeste al hacer clic */
+}
+
+/* Cambio de color para el enlace de la página actual */
+.navbar-nav .nav-link.active {
+    color: #037a9b !important; /* Color #41889a para la página activa */
+}
+
+/* Estilo para la fuente customizada */
+.staatliches-regular { 
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.navbar-nav .nav-item {
+    margin-right: 2rem; /* Ajusta este valor según el espacio que desees */
+}
+
+
+/* Ajustes de colapso y alineación */
+
+
+.nav-item {
+    text-align: center;
+}
+.navbar-nav{
+    margin-top: 0px;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.barra-inicio{
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto; /* Centrado */
+    height: auto; /* Ajusta el alto según el contenido */
+    border-radius: 0; /* Elimina el borde redondeado de las tarjetas */
+}
+
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+nav a {
+    color: #292929;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a.active {
+    color: #037a9b; /* Color celeste al pasar el mouse o si está activo */
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.titulo{
+    color:#292929;
+    letter-spacing: 0.3rem;
+    font-size: 1.0rem;        
+    text-align: center; 
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.espacioContacto{
+    margin-bottom: 15px;
+}
+  
+.subtitulo{
+    color:#505353;
+    font-size: 0.8rem;        
+    text-align: center;
+    margin-top:-15px !important;
+}
+
+.Titulo-Subtitulo{
+    margin: 50px;
+
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Estilos para pantallas pequeñas */
+/* Estilos para pantallas grandes *
+
+/* Estilos para el header */
+
+
+/* Estilos para el menú desplegable */
+/* Asegúrate de que el header y el contenido principal estén correctamente posicionados */
+.header {
+    position: relative; /* Asegura que el header esté en el flujo normal del documento */
+    z-index: 1000; /* Asegura que el header esté encima del contenido */
+    background-color: #ffffff;
+}
+
+/* Estilos para el menú desplegable */
+.navbar-collapse {
+    position: relative; /* Mantén el menú desplegable en el flujo normal del documento */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho disponible */
+    background-color: #fff; /* Asegura que el fondo del menú sea opaco */
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+    .header {
+        height: auto; /* Permite que el header se ajuste automáticamente al contenido */
+        margin: 0; /* Elimina los márgenes para aprovechar mejor el espacio */
+        padding: 0px; /* Añade padding para evitar que el contenido se pegue a los bordes */
+    }
+
+    .navbar-collapse {
+        position: relative; /* Asegura que el menú desplegable no esté fuera del flujo del documento */
+        margin-top: 10px; /* Añade espacio entre el menú y el contenido del header */
+    }
+
+    .header .col-3, .header .col-9 {
+        flex-basis: 100%; /* Ocupa toda la fila en pantallas pequeñas */
+        margin-top: 0; /* Elimina el margen superior en pantallas pequeñas */
+    }
+    
+    .header .navbar-toggler {
+        margin-left: auto; /* Alinea el botón del menú a la derecha */
+    }
+    
+    .header .navbar-brand {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    .html, .body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+footer {
+    background-color: #292929;
+}
+
+.imagenfooter{
+    width: 400px;
+    height: 100px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .text-muted {
+    color: #ffffff !important;
+}
+
+footer .navbar-brand img {
+    height: 50px;
+}
+
+footer .fab {
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+}
+
+.card-custom .card-img-top {
+    width: 360px;        /* Asegura que la imagen ocupe el ancho completo de la tarjeta */
+    height: 360px;      /* Establece una altura fija para todas las imágenes */
+    object-fit: cover;  /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+}
+
+
+.card-custom {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card-custom img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: auto;
+}
+.card-body {
+    padding: 1rem;
+}
+.card-title {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 1.5rem;
+}
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+.btn-custom {
+    font-family: 'Poppins', sans-serif;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+.btn-custom:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.25);
+}
+.btn-selected {
+    background-color: #037a9b;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+.numero{
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.razon{
+    margin-top:2px;
+    font-size: 1.1rem;
+    color:#037a9b
+}
+.texto{
+    font-size: 0.8rem;
+    color: #505353;
+    margin-top: -5px;
+}
+    
+.card-title{
+    margin-top:2px;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+
+ }
+
+.primerelemento{
+    margin: 20px;
+}
+
+
+
+   
+.card-title{
+    margin-top:2px;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+
+ }
+
+ .card-text{
+    font-size: 0.8rem;
+    color: #505353;
+    margin-top: -5px;
+    margin-left: 1.5rem;
+ }
+ 
+ .card-body{
+    width: 100%; /* Asegura que la tarjeta ocupe todo el ancho disponible */
+    max-width: 650px; /* Ajusta el ancho máximo de las tarjetas según tus necesidades */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+
+ }
+
+ .imgrazon{
+    width: 215px;
+    height: 255px; /* Ajusta la altura de la imagen según sea necesario */
+    max-width: 500px; /* Ajusta el ancho máximo de las tarjetas según tus necesidades */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionar */
+ }
+
+.card-rect{
+    border-radius: 0 !important;
+}
+
+.card-text{
+    margin-top: 15px;
+}
+
+.tarjetaSSimpleS{
+    margin-bottom: 50px;
+
+}
+
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 250px; /* Define una altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta los bordes si es necesario */
+    margin-bottom: 15px;
+}
+
+
+
+
+.seleccion-vino .card-custom,
+.card-custom {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo global para asegurar que todas las tarjetas tengan el mismo tamaño */
+.card-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card-custom img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.form-check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-check-label {
+    margin-bottom: 5px;
+}
+
+.form-check-input {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/**/
+
+
+    /* Contenedor del formulario con una clase específica */
+    .pedido-formulario {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Etiquetas dentro del contenedor */
+    .pedido-formulario label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    /* Inputs y selects dentro del contenedor */
+    .pedido-formulario input[type="number"],
+    .pedido-formulario input[type="date"],
+    .pedido-formulario select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    /* Botón de visualizar pedido dentro del contenedor */
+    .pedido-formulario #visualizar-pedido {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .pedido-formulario #visualizar-pedido:hover {
+        background-color: #0056b3;
+    }
+
+    /* Sección de vista previa del pedido dentro del contenedor */
+    .pedido-formulario #vistaPrevia {
+        padding: 20px;
+        background-color: #e9ecef;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    /* Botones de acción dentro del contenedor */
+    .pedido-formulario #botones-accion {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pedido-formulario #botones-accion button {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+    }
+
+    .pedido-formulario #botones-accion button:hover {
+        background-color: #9b212d;
+    }
+
+    .pedido-formulario #botones-accion button:nth-child(2) {
+        background-color: #28a745;
+    }
+
+    .pedido-formulario #botones-accion button:nth-child(2):hover {
+        background-color: #218838;
+    }
+
+    /* Sección de detalle del pedido dentro del contenedor */
+    .pedido-formulario #detalle-pedido {
+        padding: 20px;
+        background-color: #f1f1f1;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .pedido-formulario #detalle-pedido h4 {
+        margin: 0 0 10px;
+        color: #333;
+    }
+
+

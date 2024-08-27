@@ -1,0 +1,313 @@
+/* Estilos generales para la barra de navegación */
+
+.logo-img {
+    height: 35px; /* Ajusta este valor según el tamaño deseado */
+    width: auto;
+    margin-top: 40px;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-brand {
+    font-size: 2rem !important ;
+    color: #292929; 
+    margin-top: 40px ;
+}
+
+
+.navbar-nav .nav-link {
+    color: #292929; /* Color por defecto de los enlaces */
+    transition: color 0.3s ease-in-out; /* Suaviza la transición de color */
+    margin-top: 23px;
+    position: left;
+}
+
+/* Cambio de color al pasar el mouse por encima del enlace */
+.navbar-nav .nav-link:hover {
+    color: #037a9b; /* Color celeste al pasar el mouse */
+}
+
+/* Cambio de color al hacer clic en el enlace (foco) */
+.navbar-nav .nav-link:focus {
+    color: #037a9b; /* Color celeste al hacer clic */
+}
+
+/* Cambio de color para el enlace de la página actual */
+.navbar-nav .nav-link.active {
+    color: #037a9b !important; /* Color #41889a para la página activa */
+}
+
+/* Estilo para la fuente customizada */
+.staatliches-regular { 
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.navbar-nav .nav-item {
+    margin-right: 2rem; /* Ajusta este valor según el espacio que desees */
+}
+
+
+/* Ajustes de colapso y alineación */
+
+
+.nav-item {
+    text-align: center;
+}
+.navbar-nav{
+    margin-top: 0px;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.barra-inicio{
+    background-color: #f0f0f0; /* Color de fondo */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto; /* Centrado */
+    height: auto; /* Ajusta el alto según el contenido */
+    border-radius: 0; /* Elimina el borde redondeado de las tarjetas */
+    
+}
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+nav a {
+    color: #292929;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a.active {
+    color: #037a9b; /* Color celeste al pasar el mouse o si está activo */
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.subtitulo{
+    color:#505353;
+    font-size: 0.8rem;        
+    text-align: center;
+    margin-top:-15px !important;
+}
+
+.Titulo-Subtitulo{
+    margin: 35px;
+    background-color: #f6f6f6;
+    height: 200px;
+
+}
+
+.roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+
+/* Estilos para pantallas pequeñas */
+/* Estilos para pantallas grandes *
+
+/* Estilos para el header */
+
+
+/* Estilos para el menú desplegable */
+/* Asegúrate de que el header y el contenido principal estén correctamente posicionados */
+.header {
+    position: relative; /* Asegura que el header esté en el flujo normal del documento */
+    z-index: 1000; /* Asegura que el header esté encima del contenido */
+    background-color: #ffffff;
+}
+
+/* Estilos para el menú desplegable */
+.navbar-collapse {
+    position: relative; /* Mantén el menú desplegable en el flujo normal del documento */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho disponible */
+    background-color: #fff; /* Asegura que el fondo del menú sea opaco */
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+    .header {
+        height: auto; /* Permite que el header se ajuste automáticamente al contenido */
+        margin: 0; /* Elimina los márgenes para aprovechar mejor el espacio */
+        padding: 0px; /* Añade padding para evitar que el contenido se pegue a los bordes */
+    }
+
+    .navbar-collapse {
+        position: relative; /* Asegura que el menú desplegable no esté fuera del flujo del documento */
+        margin-top: 10px; /* Añade espacio entre el menú y el contenido del header */
+    }
+
+    .header .col-3, .header .col-9 {
+        flex-basis: 100%; /* Ocupa toda la fila en pantallas pequeñas */
+        margin-top: 0; /* Elimina el margen superior en pantallas pequeñas */
+    }
+    
+    .header .navbar-toggler {
+        margin-left: auto; /* Alinea el botón del menú a la derecha */
+    }
+    
+    .header .navbar-brand {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+    .html, .body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+footer {
+    background-color: #292929;
+}
+
+.imagenfooter{
+    width: 400px;
+    height: 100px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .text-muted {
+    color: #ffffff !important;
+}
+
+footer .navbar-brand img {
+    height: 50px;
+}
+
+footer .fab {
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+.tarjetasEquipo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-simple {
+    width: 23%; /* Ajusta esto para que quepan las 4 tarjetas en una fila */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-simple img {
+    width: 100%; /* Esto hará que las imágenes sean cuadradas */
+    height: auto;
+}
+
+.card-body-simple {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .card-simple {
+        width: 48%; /* Ajusta esto para pantallas más pequeñas */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-simple {
+        width: 100%; /* Para pantallas muy pequeñas, cada tarjeta ocupa toda la fila */
+        margin-bottom: 20px;
+    }
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+.titulo {
+    font-size: 2rem; /* Ajusta el tamaño según prefieras */
+    letter-spacing: 0.1em; /* Espaciado entre letras */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+.información {
+    font-size: 0.8rem; /* Tamaño del texto */
+    color: #000000; /* Color del texto */
+
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.card-text-simple{
+    font-size: 0.8rem;
+}
+
+.staatliches-regular { 
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+
+/* Estilos para los textos y botones */
+.titulo-about {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 30px;
+}
+
+.highlight {
+    color: #3485A5;
+}
+
+.texto-about {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-our-work {
+    font-family: 'Staatliches', sans-serif;
+    background-color: #2F2F2F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Asegúrate de que la imagen sea responsiva */
+.img-fluid {
+    width: 350px;
+    height: auto;
+}
+
+/* Ajusta los márgenes según sea necesario */
+.my-4 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+

@@ -1,0 +1,321 @@
+/* Estilos generales para la barra de navegación */
+
+.logo-img {
+    height: 35px; /* Ajusta este valor según el tamaño deseado */
+    width: auto;
+    margin-top: 40px;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar-brand {
+    font-size: 2rem !important ;
+    color: #292929; 
+    margin-top: 40px ;
+}
+
+
+.navbar-nav .nav-link {
+    color: #292929; /* Color por defecto de los enlaces */
+    transition: color 0.3s ease-in-out; /* Suaviza la transición de color */
+    margin-top: 23px;
+    position: left;
+}
+
+/* Cambio de color al pasar el mouse por encima del enlace */
+.navbar-nav .nav-link:hover {
+    color: #037a9b; /* Color celeste al pasar el mouse */
+}
+
+/* Cambio de color al hacer clic en el enlace (foco) */
+.navbar-nav .nav-link:focus {
+    color: #037a9b; /* Color celeste al hacer clic */
+}
+
+/* Cambio de color para el enlace de la página actual */
+.navbar-nav .nav-link.active {
+    color: #037a9b !important; /* Color #41889a para la página activa */
+}
+
+/* Estilo para la fuente customizada */
+.staatliches-regular { 
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.navbar-nav .nav-item {
+    margin-right: 2rem; /* Ajusta este valor según el espacio que desees */
+}
+
+
+/* Ajustes de colapso y alineación */
+
+
+.nav-item {
+    text-align: center;
+}
+.navbar-nav{
+    margin-top: 0px;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.barra-inicio {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 0;
+    margin-bottom: 50px;
+    text-align: center; /* Centra el texto y el contenido */
+}
+
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: center; /* Centra el título */
+}
+
+.barra-inicio nav {
+    display: flex;
+    justify-content: center; /* Centra el menú de navegación */
+}
+
+.barra-inicio ul {
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú */
+}
+
+nav a {
+    color: #292929;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover,
+nav a.active {
+    color: #037a9b; /* Color celeste al pasar el mouse o si está activo */
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+
+.subtitulo{
+    color:#505353;
+    font-size: 0.8rem;        
+    text-align: center;
+    margin-top:-15px !important;
+}
+
+.Titulo-Subtitulo{
+    margin: 35px;
+    background-color: #f6f6f6;
+    height: 200px;
+
+}
+
+.roboto-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+
+/* Estilos para pantallas pequeñas */
+/* Estilos para pantallas grandes *
+
+/* Estilos para el header */
+
+
+/* Estilos para el menú desplegable */
+/* Asegúrate de que el header y el contenido principal estén correctamente posicionados */
+.header {
+    position: relative; /* Asegura que el header esté en el flujo normal del documento */
+    z-index: 1000; /* Asegura que el header esté encima del contenido */
+    background-color: #ffffff;
+}
+
+/* Estilos para el menú desplegable */
+.navbar-collapse {
+    position: relative; /* Mantén el menú desplegable en el flujo normal del documento */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho disponible */
+    background-color: #fff; /* Asegura que el fondo del menú sea opaco */
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media (min-width: 768px) {
+    .header {
+        height: auto; /* Permite que el header se ajuste automáticamente al contenido */
+        margin: 0; /* Elimina los márgenes para aprovechar mejor el espacio */
+        padding: 0px; /* Añade padding para evitar que el contenido se pegue a los bordes */
+    }
+
+    .navbar-collapse {
+        position: relative; /* Asegura que el menú desplegable no esté fuera del flujo del documento */
+        margin-top: 10px; /* Añade espacio entre el menú y el contenido del header */
+    }
+
+    .header .col-3, .header .col-9 {
+        flex-basis: 100%; /* Ocupa toda la fila en pantallas pequeñas */
+        margin-top: 0; /* Elimina el margen superior en pantallas pequeñas */
+    }
+    
+    .header .navbar-toggler {
+        margin-left: auto; /* Alinea el botón del menú a la derecha */
+    }
+    
+    .header .navbar-brand {
+        font-size: 1.2rem; /* Ajusta el tamaño del texto para pantallas pequeñas */
+    }
+
+}
+
+footer {
+    background-color: #292929;
+}
+
+.imagenfooter{
+    width: 400px;
+    height: 100px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer .text-muted {
+    color: #ffffff !important;
+}
+
+footer .navbar-brand img {
+    height: 50px;
+}
+
+footer .fab {
+    font-size: 1.25rem;
+    margin: 0 0.5rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    border: 1px solid #333;
+    border-radius: 50%; /* Asegura un círculo perfecto */
+    padding: 10px;
+    margin-right: 10px;
+    width: 60px; /* Ancho del círculo */
+    height: 60px; /* Alto del círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el ícono dentro del círculo */
+}
+
+.col{
+    background-color: #f6f6f6;
+}
+
+
+/* Fondo y estilo para la barra de abajo */
+.barra-de-abajo {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color del texto */
+    padding: 20px;
+    text-align: center; /* Centra el texto y los iconos */
+}
+
+/* Ajusta el tamaño de los íconos dentro de la barra de abajo */
+.barra-de-abajo i {
+    font-size: 1.5rem; /* Tamaño de los íconos */
+}
+
+.info-contacto {
+    margin-top: 20px;
+}
+
+.formulario1, .formulario2 {
+    background-color: #f0f0f0;
+    margin-top: 50px;
+}
+
+.formulario1{
+    margin-right: 0px;
+    border-radius: 0px;
+}
+
+
+
+.barra-de-abajo{
+    background-color:#505353;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.información {
+    font-size: 0.8rem; /* Tamaño del texto */
+    color: #000000; /* Color del texto */
+
+}
+
+
+.input-style {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 0px;
+}
+
+.submit-button {
+    background-color: #333333 !important;
+    color: #fff !important;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 0px !important;
+    cursor: pointer;
+    position: relative;
+    z-index: 10; /* Asegura que el botón esté por encima de otros elementos */
+
+}
+
+.submit-button:hover {
+    background-color: #388396 !important;
+}
+
+.form-control {
+    border-radius: 0 !important;
+}
+
+
+
